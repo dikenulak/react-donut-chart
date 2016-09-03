@@ -1,0 +1,59 @@
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.subchart{
+  display: inline-block;
+  height: auto;
+}
+#subPie{
+  width: 400px;
+}
+.pieBox{
+  display: inline-block;
+  height: auto;
+
+}
+#mainTooltip {
+  position: absolute;
+  min-width :90px;
+  width: 120px;
+  height: 45px;
+  padding: 5px 0 48px 0;
+  background-color: rgba(0,0,0,0.6);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  fill: #fff;
+  color: #fff;
+  text-anchor: middle;
+  text-align: center;
+  font-weight: bold;
+  z-index: 9999;
+}
+#mainTooltip:before {
+  border: solid;
+  border-color: rgba(0,0,0,0.48) transparent;
+  border-width: 10px 10px 0 10px;
+  top: 100%;
+  content: "";
+  left: 43%;
+  position: absolute;
+  z-index: 9999;
+}
+#mainTooltip.hidden {
+  display: none;
+}
+polyline {
+  fill: none;
+  stroke: black;
+}
+.labelName text {
+  font-weight: bold;
+}
